@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  background-color: #375cec;
+}
+.container {
+  background-color: #ffffff;
+  width: min(90%, 500px);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  padding: 3em;
+  border-radius: 1em;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+}
+h1 {
+  font-size: 1.5em;
+}
+label {
+  display: block;
+  font-weight: 600;
+  margin: 3em 0 0.3em 0;
+}
+textarea {
+  resize: none;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  width: 100%;
+}
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+button {
+  background-color: #5272ee;
+  color: #ffffff;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 0.3em;
+  outline: none;
+  margin: 1em 0;
+  cursor: pointer;
+  transition: all ease .3s;
+}
+button:hover {
+  background-color: #6f86e6;
+}
+p {
+  font-weight: 600;
+}
+p span {
+  padding: 5px;
+  background-color: #e2e9eb;
+  font-weight: 400;
+  line-height: 35px;
+}
+.credit {
+  width: 100%;
+  text-align: center;
+  color: #222222;
+  position: relative;
+  bottom: -35px;
+  font-size: 13px;
+}
+.credit a {
+  color: #375cec;
+}
+.credit a:hover {
+  color: #000;
+}
+
+@media (max-width:767px) {
+  .container {
+    padding: 1.4em;
+    padding-bottom: 45px;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+  label {
+    margin: 1.8em 0 0.3em 0;
+  }
+  button {
+    padding: 0.8em 1.5em;
+    margin: 0.8em 0;
+  }
+}
